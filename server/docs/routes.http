@@ -1,0 +1,22 @@
+GET http://localhost:3333 HTTP/1.1
+content-type: application/json
+
+###
+POST  http://localhost:3333/class HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Edson",
+    "avatar": "https://avatars.githubusercontent.com/u/21209082?v=4",
+    "whatsapp": "84999878917", 
+    "bio": "EdsonCandido",
+    "cost": 110, 
+    "subject": "Programação",
+    "schedule": [
+        {"week_day" : 1, "from": "10:00", "to": "12:00"},
+        {"week_day" : 3, "from": "10:00", "to": "12:00"}
+    ]
+}
+
+###
+GET  http://localhost:3333/class HTTP/1.1
